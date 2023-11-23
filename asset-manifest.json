@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mathu.dev/static/css/main.7a3f1006.css",
-    "main.js": "/mathu.dev/static/js/main.545030d8.js",
-    "static/js/787.09937d4e.chunk.js": "/mathu.dev/static/js/787.09937d4e.chunk.js",
-    "index.html": "/mathu.dev/index.html",
-    "main.7a3f1006.css.map": "/mathu.dev/static/css/main.7a3f1006.css.map",
-    "main.545030d8.js.map": "/mathu.dev/static/js/main.545030d8.js.map",
-    "787.09937d4e.chunk.js.map": "/mathu.dev/static/js/787.09937d4e.chunk.js.map"
+    "main.css": "/robot/static/css/main.7a3f1006.css",
+    "main.js": "/robot/static/js/main.36ee9291.js",
+    "static/js/787.09937d4e.chunk.js": "/robot/static/js/787.09937d4e.chunk.js",
+    "index.html": "/robot/index.html",
+    "main.7a3f1006.css.map": "/robot/static/css/main.7a3f1006.css.map",
+    "main.36ee9291.js.map": "/robot/static/js/main.36ee9291.js.map",
+    "787.09937d4e.chunk.js.map": "/robot/static/js/787.09937d4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a3f1006.css",
-    "static/js/main.545030d8.js"
+    "static/js/main.36ee9291.js"
   ]
 }
