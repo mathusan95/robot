@@ -22,8 +22,8 @@ const NavigationLayoutComponent = () => {
       onKeyDown={handleKeyDown}
       ref={gridRef}
       style={{
-        gridTemplateRows: `repeat(${configration.row.length}, 150px)`,
-        gridTemplateColumns: `repeat(${configration.column.length}, 150px)`
+        gridTemplateRows: `repeat(${configration.row.length}, 1fr)`,
+        gridTemplateColumns: `repeat(${configration.column.length}, 1fr)`
       }}>
       {configration.row.map((row) => {
         return (
