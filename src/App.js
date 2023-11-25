@@ -44,8 +44,9 @@ const App = () => {
 
   //handle teleportation via click or tapping
   const handleClick = (row, col) => {
-    if (blinkingId !== '') return;
-    setBlinkingId(`${row}-${col}`);
+    if (!blinkingId) {
+      setBlinkingId(`${row}-${col}`);
+    }
   };
 
   //delay functionality
