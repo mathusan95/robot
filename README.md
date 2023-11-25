@@ -8,7 +8,7 @@ These instructions will get your copy of the project up and running on your loca
 
 ### Prerequisites
 
-- Node.js (specify version)
+- Node.js >= v19.8.1
 
 ### Installing
 
