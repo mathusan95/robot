@@ -26,8 +26,7 @@ const NavigationLayout = ({ viewOnly, configuration }) => {
       style={{
         gridTemplateRows: `repeat(${configuration?.row?.length}, 1fr)`,
         gridTemplateColumns: `repeat(${configuration?.col?.length}, 1fr)`
-      }}
-    >
+      }}>
       {configuration?.row.map((row) => {
         return configuration?.col.map((col) => {
           return (
@@ -47,8 +46,7 @@ const NavigationLayout = ({ viewOnly, configuration }) => {
               }
               key={`${row}-${col}`}
               data-testid={`cell-${row}-${col}`}
-              id={`cell-${row}-${col}`}
-            >
+              id={`cell-${row}-${col}`}>
               {!viewOnly && row === imagePosition.row && col === imagePosition.col && (
                 <>
                   <FontAwesomeIcon icon={faRobot} size="7x" bounce={true} className="robot-icon" />

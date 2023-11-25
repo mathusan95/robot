@@ -44,8 +44,7 @@ const Setting = () => {
           {
             setModalStatus(false), setTableInternalConfig(tableConfiguration);
           }
-        }}
-      >
+        }}>
         <Modal.Header closeButton>
           <Modal.Title>Settings</Modal.Title>
         </Modal.Header>
@@ -66,8 +65,7 @@ const Setting = () => {
                           row: parseInt(e.target.value)
                         };
                       })
-                    }
-                  >
+                    }>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -95,8 +93,7 @@ const Setting = () => {
                           col: parseInt(e.target.value)
                         };
                       })
-                    }
-                  >
+                    }>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -131,8 +128,7 @@ const Setting = () => {
               {
                 setModalStatus(false), setTableInternalConfig(tableConfiguration);
               }
-            }}
-          >
+            }}>
             Close
           </Button>
           <Button
@@ -143,8 +139,7 @@ const Setting = () => {
                 saveConfiguration(internalTableConfiguration);
                 setModalStatus(false);
               }
-            }}
-          >
+            }}>
             Save Changes
           </Button>
         </Modal.Footer>

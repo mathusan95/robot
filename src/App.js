@@ -110,8 +110,7 @@ const App = () => {
         saveConfiguration: setTableConfiguration,
         tableConfiguration: tableConfiguration,
         blinkingId
-      }}
-    >
+      }}>
       <Container>
         <Row>
           <Col sm={2} lg={1} md={2}>

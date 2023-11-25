@@ -23,7 +23,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="navigation-container mt-3">
+    <div className="navigation-container">
       <div className="navigation-header">
         <strong>Navigation</strong>
       </div>
