@@ -10,43 +10,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.container{
+.container {
   margin-top: 20px;
 }
 
 .grid-container {
   display: grid;
-  gap: 1px; 
-  width: 100vh;
+  gap: 1px;
+  width: 100%;
 }
 
 .grid-cell {
-  background-color:#e4e4e4;
-  cursor: pointer;  
-  border: 1px solid black; 
+  background-color: #e4e4e4;
+  cursor: pointer;
+  border: 1px solid black;
   display: flex;
-  justify-content: center; 
-  align-items: center;
-}
-.grid-cell-disabled {
-  background-color:#e4e4e4;
-  cursor: not-allowed;
-  border: 1px solid black; 
-  display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
 .blinking {
   animation: blinker 1s linear infinite;
   background-color: #e4e4e4;
-  border: 1px solid black; 
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: not-allowed;
 }
 
+.disabled {
+  cursor: not-allowed !important;
+}
 
 @keyframes blinker {
   50% {
@@ -58,12 +53,10 @@ code {
   text-align: center;
   padding: 20px;
   border: 1px solid black;
-  width: 250px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   height: 250px;
-  margin-left: 20px;
-
 }
 
 .navigation-header {
@@ -72,38 +65,51 @@ code {
 
 .arrow-icon {
   cursor: pointer;
-  margin: 5px; /* Small margin for all arrows */
+  margin: 5px;
+}
+.setting-icon {
+  cursor: pointer;
 }
 
 .middle-arrows {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: '10px 0' 
 }
-.down-arrow{
+.down-arrow {
   margin-top: 10px;
 }
 
-@media (max-width: 600px) { /* Example media query for mobile */
- 
-  .navigation-container{
-    margin: 50px 0 0 35vh;
-   
-  }
-  .container{
-    overflow-y: hidden;
-    overflow-x: hidden;
+@media (max-width: 600px) {
+  .arrow-icon,
+  .robot-icon,
+  .setting-icon {
+    font-size: 1.5rem;
   }
 
+  .navigation-container {
+    margin: 20px 0 0 20%;
+    height: 90%;
+  }
+  .navigation-header {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .navigation-container{
-    margin: 50px 0 0 40vh;
-   
+@media (min-width: 430px) and (max-width: 932px) {
+  .arrow-icon,
+  .robot-icon,
+  .setting-icon {
+    font-size: 1.5rem;
   }
-  .container{
-    margin: 0 !important;
+
+  .navigation-container {
+    margin: 20px 0 0 30%;
+    height: 90%;
+  }
+  .navigation-header {
+    margin-bottom: 10px;
+    font-size: 10px;
   }
 }
