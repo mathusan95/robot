@@ -6,16 +6,16 @@ import { Col, Container, Row } from 'react-bootstrap';
 //file imports
 import Navigation from './components/NavigationComponent';
 import NavigationLayout from './components/NavigationLayoutComponent';
-import { intialConfiguration } from './utils/config';
+import { initialConfiguration } from './utils/config';
 import Setting from './components/SettingsComponent';
 import { createArrayUpTo } from './utils/helperFunctions';
 
 export const RobotContext = createContext(null);
 
 const App = () => {
-  const [imagePosition, setImagePosition] = useState(intialConfiguration.startPosition);
+  const [imagePosition, setImagePosition] = useState(initialConfiguration.startPosition);
   const [blinkingId, setBlinkingId] = useState('');
-  const [tableConfiguration, setTableConfiguration] = useState(intialConfiguration.tableLayout);
+  const [tableConfiguration, setTableConfiguration] = useState(initialConfiguration.tableLayout);
 
   //function to handle user key press and navigation button press
   const handleKeyDown = (event) => {
@@ -39,7 +39,7 @@ const App = () => {
 
   //intialize the image position when navigation layout change
   useEffect(() => {
-    setImagePosition(intialConfiguration.startPosition);
+    setImagePosition(initialConfiguration.startPosition);
   }, [tableConfiguration]);
 
   //handle teleportation via click or tapping
@@ -68,7 +68,7 @@ const App = () => {
       timeoutId = setTimeout(() => {
         moveImage(targetRow, targetColumn);
         setBlinkingId('');
-      }, totalBosesToMove * intialConfiguration.delayForOneBox);
+      }, totalBosesToMove * initialConfiguration.delayForOneBox);
     }
 
     return () => {
@@ -109,7 +109,7 @@ const App = () => {
         handleClick,
         imagePosition,
         saveConfiguration: setTableConfiguration,
-        tableConfiguration: tableConfiguration,
+        tableConfiguration,
         blinkingId
       }}>
       <Container>

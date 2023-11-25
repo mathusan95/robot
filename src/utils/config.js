@@ -1,4 +1,4 @@
-export const intialConfiguration = {
+export const initialConfiguration = {
   tableLayout: {
     row: 5,
     col: 5
