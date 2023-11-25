@@ -56,7 +56,9 @@ describe('testing Setting Component', () => {
     });
   });
 
-  test('when SaveChanges button is pressed it should pass the column and row value which were selected  to saveConfigurationFunction', async () => {
+  /* when SaveChanges button is clicked the row and col 
+  value which were selected passed  saveConfigurationFunction*/
+  test('when SaveChanges button saveConfigurationFunction should be triggerd', async () => {
     const saveConfiguration = jest.fn().mockReturnValue({ col: 3, row: 3 });
     render(
       <MockContextProvider value={{ ...mockValues, saveConfiguration }}>
@@ -78,7 +80,9 @@ describe('testing Setting Component', () => {
     });
   });
 
-  test('when cell is blinking(blinkId) setting icon should have disabled class and onClick function should not show the setting modal', async () => {
+  /*when cell is blinking(blinkId) setting icon should have disabled class
+   and onClick function should not show the setting modal*/
+  test('when cell is blinking setting icon should be disabled', async () => {
     render(
       <MockContextProvider value={{ ...mockValues, blinkingId: '3-3' }}>
         <Setting />
