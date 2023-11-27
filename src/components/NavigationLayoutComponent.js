@@ -1,5 +1,5 @@
 //package imports
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
@@ -12,10 +12,6 @@ const NavigationLayout = ({ viewOnly, configuration }) => {
   const context = process.env.NODE_ENV === 'test' ? MockContext : RobotContext;
   const { imagePosition, blinkingId, handleClick, handleKeyDown } = useContext(context);
   const gridRef = useRef(null);
-
-  useEffect(() => {
-    gridRef.current.focus();
-  }, []);
 
   return (
     <div
